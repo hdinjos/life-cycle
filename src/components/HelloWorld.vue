@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div style="border: 1px solid violet;">
     <a-button icon="search">Cari</a-button>
     <a-dropdown>
       <a-menu slot="overlay" @click="handleMenuClick">
@@ -17,15 +17,15 @@
       <a-icon type="smile" :rotate="180" />
       <a-icon type="loading" />
     </div>
+
+    <h2>{{msg}}</h2>
   </div>
 </template>
 
 <script>
 export default {
   name: "HelloWorld",
-  props: {
-    msg: String,
-  },
+  props: ['msg'],
 };
 </script>
 
